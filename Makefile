@@ -2,7 +2,7 @@
 CFLAGS = -Wall -Wextra -pedantic -O2
 
 tzsp2pcap: tzsp2pcap.c
-	cc -std=c99 -o $@ $(CFLAGS) $(LDFLAGS) -lpcap $<
+	cc -o tzsp2pcap -Wall -O2 -lpcap tzsp2pcap.c
 
 .PHONY: clean all
 
